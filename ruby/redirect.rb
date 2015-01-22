@@ -2,6 +2,6 @@
 
 get "/*" do
   path_query = "#{request.path}?#{request.query_string}"
-  url = "oauth-swift://oauth-callback/#{path_query}"  
+  url = "oauth-swift://oauth-callback#{path_query}"  
   redirect url
 end
