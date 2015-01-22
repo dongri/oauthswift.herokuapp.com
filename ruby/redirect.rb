@@ -1,8 +1,7 @@
 # encoding: utf-8
 
-get '/:path' do
-  path = params[:path]
-  url = "oauth-swift://oauth-callback/#{path}"
-  puts url
+get "/*" do
+  path_query = "#{request.path}?#{request.query_string}"
+  url = "oauth-swift://oauth-callback/#{path_query}"  
   redirect url
 end
