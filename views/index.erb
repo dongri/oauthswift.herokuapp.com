@@ -14,6 +14,10 @@
     background: yellow;
     font-weight: bold;
   }
+  .terminal {
+    background: #333;
+    color: #EEE;
+  }
 </style>
 </head>
 <body>
@@ -29,4 +33,22 @@ You can set callback url :
 <br><br>
 
 Redirect to <span class="highlight">"oauth-swift://oauth-callback/{app_name}"</span>
+
+<pre class="terminal">
+$ curl -i https://oauthswift.herokuapp.com/callback/app_name                                                                                                                       14:40:58
+HTTP/1.1 302 Found 
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Location: oauth-swift://oauth-callback/app_name?
+Content-Length: 0
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.4.2 (Ruby/2.5.0/2017-12-25)
+Date: Sat, 24 Mar 2018 05:41:01 GMT
+Via: 1.1 vegur
+</pre>
+
 </body>
+
+</html>
