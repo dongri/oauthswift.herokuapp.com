@@ -15,8 +15,11 @@
     font-weight: bold;
   }
   .terminal {
-    background: #333;
-    color: #EEE;
+    background: #000;
+    color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 18px;
   }
 </style>
 </head>
@@ -35,7 +38,7 @@ You can set callback url :
 Redirect to <span class="highlight">"oauth-swift://oauth-callback/{app_name}"</span>
 
 <pre class="terminal">
-$ curl -i https://oauthswift.herokuapp.com/callback/app_name                                                                                                                       14:40:58
+$ curl -i https://oauthswift.herokuapp.com/callback/app_name
 HTTP/1.1 302 Found 
 Connection: keep-alive
 Content-Type: text/html;charset=utf-8
