@@ -1,5 +1,9 @@
 # oauthswift.herokuapp.com
 
+## Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## Development
 ```
 $ ruby app.rb
 == Sinatra (v2.0.8.1) has taken the stage on 4567 for development with backup from Puma
