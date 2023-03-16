@@ -7,7 +7,7 @@ GEM
       tilt
     multi_json (1.14.1)
     mustermann (1.0.3)
-    rack (2.2.3)
+    rack (2.2.6.4)
     rack-protection (2.0.7)
       rack
     sinatra (2.0.7)
